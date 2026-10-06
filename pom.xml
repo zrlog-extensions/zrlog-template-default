@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion><groupId>com.hibegin</groupId><artifactId>zrlog-template-default</artifactId><version>1.0</version>
+  <modelVersion>4.0.0</modelVersion><groupId>com.hibegin</groupId><artifactId>zrlog-template-default</artifactId><version>1.0.1</version>
   <name>zrlog-template-default</name><description>ZrLog bundled theme resources and ServiceLoader provider</description>
   <url>https://github.com/zrlog-extensions/zrlog-template-default</url>
   <licenses><license><name>Apache-2.0</name><url>https://spdx.org/licenses/Apache-2.0.html</url></license></licenses>
