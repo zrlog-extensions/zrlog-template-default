@@ -1113,20 +1113,32 @@ html.theme-changing *::after {
 
 @media (max-width: 860px) {
     .site-header-inner {
+        position: relative;
         grid-template-columns: minmax(0, 1fr) auto auto;
         gap: .65rem;
     }
 
     .menu-toggle {
         display: inline-flex;
+        justify-content: center;
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .theme-menu-trigger {
+        width: 44px;
+        height: 44px;
     }
 
     .site-navigation {
         position: absolute;
         top: calc(100% + .5rem);
-        right: max(.625rem, calc((100vw - var(--content-width)) / 2));
+        right: 0;
         display: block;
-        width: min(260px, calc(100vw - 1.25rem));
+        width: min(260px, 100%);
+        max-height: calc(100vh - 84px);
+        max-height: calc(100dvh - 84px);
+        overflow-y: auto;
         padding: .45rem;
         border: 1px solid var(--line);
         border-radius: 14px;
@@ -1149,6 +1161,8 @@ html.theme-changing *::after {
 
     .site-navigation ul {
         display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        justify-content: stretch;
         gap: .2rem;
     }
 
@@ -1197,7 +1211,10 @@ html.theme-changing *::after {
         min-height: 60px;
     }
 
-    .menu-toggle > span:last-child,
+    .menu-toggle > span:last-child {
+        display: none;
+    }
+
     .post-card,
     .link-grid,
     .category-grid,
